@@ -1,5 +1,9 @@
 fastapi
+uvicorn
 joblib
+mlflow
 numpy
 pandas
 scikit-learn
+dagshub
+pydantic

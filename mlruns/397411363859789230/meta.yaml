@@ -1,0 +1,8 @@
+artifact_location: file:///C:/Users/user/Desktop/Data Science/MLOps/Recommender system/mlruns/397411363859789230
+creation_time: 1779342912419
+experiment_id: '397411363859789230'
+last_update_time: 1779342912419
+lifecycle_stage: active
+name: spotify-recommender
+trace_location: null
+workspace: default

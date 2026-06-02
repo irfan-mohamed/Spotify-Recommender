@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Users/user/Desktop/Data Science/MLOps/Recommender system/mlruns/397411363859789230/models/m-803a06e54abf4dffa79bb0698349fe63/artifacts
+creation_timestamp: 1779342913906
+experiment_id: '397411363859789230'
+last_updated_timestamp: 1779342917634
+model_id: m-803a06e54abf4dffa79bb0698349fe63
+model_type: null
+name: model
+source_run_id: 15eae2319e2948bd97e7170c247af8a4
+status: 2
+status_message: null

@@ -1,0 +1,9 @@
+.git
+.gitignore
+__pycache__
+.venv
+venv
+data/raw/Final Dataset.csv
+mlruns
+notebooks
+README.md

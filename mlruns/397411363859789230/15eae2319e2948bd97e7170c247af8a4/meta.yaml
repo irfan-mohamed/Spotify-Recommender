@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/user/Desktop/Data Science/MLOps/Recommender system/mlruns/397411363859789230/15eae2319e2948bd97e7170c247af8a4/artifacts
+end_time: 1779342917675
+entry_point_name: ''
+experiment_id: '397411363859789230'
+lifecycle_stage: active
+run_id: 15eae2319e2948bd97e7170c247af8a4
+run_name: kmeans-pca-training
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1779342912752
+status: 3
+tags: []
+user_id: user

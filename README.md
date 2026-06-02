@@ -150,8 +150,45 @@ Recommender system/
    - Load the raw dataset from `data/raw/Final Dataset.csv`
    - Apply preprocessing and feature engineering
    - Train the K-Means model
+   - Log parameters, metrics, artifacts, and the sklearn model to MLflow
+   - Register the trained model as `spotify-kmeans-recommender`
    - Save the trained pipeline to `models/kmeans_pipeline.pkl`
    - Save processed data to `data/processed/tracks_with_clusters.csv`
+
+   MLflow uses a local `mlruns` tracking store by default. To view runs and the
+   model registry locally, run:
+   ```bash
+   mlflow ui --backend-store-uri ./mlruns
+   ```
+
+   Optional environment variables:
+   - `MLFLOW_TRACKING_URI` - tracking server or backend store URI
+   - `MLFLOW_EXPERIMENT_NAME` - experiment name, defaults to `spotify-recommender`
+   - `MLFLOW_REGISTERED_MODEL_NAME` - registered model name, defaults to `spotify-kmeans-recommender`
+
+### Share the registered model online with DagsHub
+
+DagsHub provides a free hosted MLflow server and model registry for each
+repository. To create a shareable model registry URL:
+
+1. Create a free DagsHub account.
+2. Create a DagsHub repository, for example `spotify-recommender`.
+3. Create a DagsHub access token from your account settings.
+4. Register the model to DagsHub:
+   ```powershell
+   .\scripts\register_model_dagshub.ps1 `
+     -DagsHubUsername "your-dagshub-username" `
+     -DagsHubRepo "spotify-recommender" `
+     -DagsHubToken "your-dagshub-token"
+   ```
+
+After the run finishes, share this URL:
+```text
+https://dagshub.com/your-dagshub-username/spotify-recommender.mlflow/#/models/spotify-kmeans-recommender
+```
+
+Do not commit or paste your DagsHub token into source files. Pass it through the
+script parameter or set it as a local environment variable only.
 
 5. **Start the API server**
    ```bash
