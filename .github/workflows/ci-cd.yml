@@ -41,4 +41,4 @@ jobs:
     steps: 
       - name: Trigger Render Deployement
         run: |
-          curl ${{secrets.RENDER_DEPLOY_HOOK}}
+          curl ${{secrets.RENDER_DEPLOYEMENT_SECRETS}}
