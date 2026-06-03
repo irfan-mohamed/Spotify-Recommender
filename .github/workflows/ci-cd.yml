@@ -24,7 +24,12 @@ jobs:
       - name: Install Dependencies
         run: |
           pip install -r requirement.txt
-        
+          
+      - name: Show project structure
+        run: |
+          pwd
+          ls -R
+
       - name: Run Tests
         run: |
           pytest
