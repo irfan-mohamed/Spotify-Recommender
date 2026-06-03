@@ -1,4 +1,5 @@
 fastapi
+starlette
 uvicorn
 joblib
 mlflow
@@ -8,3 +9,4 @@ scikit-learn
 dagshub
 pydantic
 pytest
+httpx
