@@ -34,7 +34,7 @@ jobs:
           docker build -t spotify-recommender .
 
   deploy:
-    needs: test
+    needs: build
     runs-on: ubuntu-latest
 
     steps: 
